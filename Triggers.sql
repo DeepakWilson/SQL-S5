@@ -1,3 +1,17 @@
+/* Create a table customer_details (cust_id (unique), cust_name, address).
+Create a table emp_details (empid (unique), empname, salary)
+Create a table cust_count (count_row)
+1) Create a trigger whenever a new record is inserted in the customer_details table.
+2) Create a trigger to display a message when a user enters a value > 20000 in the salary
+ field of emp_details table.
+3) Create a trigger w.r.t customer_details table. Increment the value of count_row (in
+ cust_count table) whenever a new tuple is inserted and decrement the value of
+ count_row when a tuple is deleted. Initial value of the count_row is set to 0.
+4) Create a trigger to insert the deleted rows from emp_details to another table and
+ updated rows to another table. (Create the tables deleted and updated)*/
+ 
+
+
 --TRIGGER QN1
 CREATE OR REPLACE TRIGGER tr1 
 BEFORE INSERT ON customer_details FOR EACH ROW 
